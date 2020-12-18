@@ -38,7 +38,7 @@ export default function HeaderMenu() {
 							</div>
 						</Col>
 						<Col className="text-end align-self-center hotline__menu">
-							<FaPhoneAlt class="icon__item" /> Hotline:{" "}
+							<FaPhoneAlt className="icon__item" /> Hotline:{" "}
 							<b>1-123-45678-999</b>
 						</Col>
 					</Row>
