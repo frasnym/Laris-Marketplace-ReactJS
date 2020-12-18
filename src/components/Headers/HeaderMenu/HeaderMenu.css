@@ -1,0 +1,67 @@
+.HeaderMenu {
+	border-bottom: 1px solid lightgray;
+}
+
+.category__toggle {
+	cursor: pointer;
+	padding: 10px 0;
+}
+
+.category__toggle .icon__item {
+	color: grey;
+	transform: translateY(-50%);
+	transition: 0.2s;
+}
+
+.category__toggle:hover .icon__item {
+	transform: rotate(180deg) translateY(50%);
+}
+
+.category__toggle:hover .category__menu {
+	display: block;
+}
+
+.category__menu {
+	display: none;
+	position: absolute;
+	min-width: 20%;
+	border: 1px solid lightgray;
+	padding: 15px 0;
+	margin-top: 10px;
+}
+
+.category__menu .icon__grey {
+	color: grey;
+}
+
+.category__menu li:hover {
+	color: orangered;
+}
+
+.category__menu li:hover > .category__submenu {
+	display: block;
+}
+
+.category__menu > ul > li,
+.category__submenu > ul > li {
+	list-style: none;
+	padding: 5px 0;
+}
+
+.category__submenu {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	padding: 15px 10px;
+	border-right: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+}
+
+.category__submenu:hover {
+	display: block;
+}
+
+.category__submenu li {
+	color: black;
+}
