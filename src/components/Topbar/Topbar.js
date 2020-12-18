@@ -9,7 +9,7 @@ export default function Topbar() {
 		<div className="container">
 			<Row className="Topbar">
 				<Col className="TopbarLeft text-start">
-					<p>Selamat datang di LARIS!</p>
+					<p className="m-0">Selamat datang di LARIS!</p>
 				</Col>
 				<Col className="TopbarLeft text-end">
 					<nav>

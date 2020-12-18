@@ -1,4 +1,5 @@
 import React from "react";
+import Headers from "../Headers/Headers";
 import Topbar from "../Topbar/Topbar";
 
 export default function Layout(props) {
@@ -6,7 +7,7 @@ export default function Layout(props) {
 		// React fragment
 		<>
 			<Topbar />
-			Header
+			<Headers />
 			{props.children}
 		</>
 	);
