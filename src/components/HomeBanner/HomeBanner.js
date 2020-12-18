@@ -2,6 +2,8 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import { FaAngleDoubleRight, FaAngleDoubleLeft } from "react-icons/fa";
 
+import "./HomeBanner.css";
+
 export default function HomeBanner() {
 	return (
 		<div className="HomeBanner">
