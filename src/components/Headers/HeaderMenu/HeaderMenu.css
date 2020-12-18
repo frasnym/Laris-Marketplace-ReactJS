@@ -22,6 +22,8 @@
 }
 
 .category__menu {
+	z-index: 991;
+	background-color: white;
 	display: none;
 	position: absolute;
 	min-width: 20%;
@@ -49,11 +51,14 @@
 }
 
 .category__submenu {
+	z-index: 991;
+	background-color: white;
 	display: none;
 	position: absolute;
 	top: 0;
 	left: 100%;
 	padding: 15px 10px;
+	border-left: 1px solid lightgray;
 	border-right: 1px solid lightgray;
 	border-bottom: 1px solid lightgray;
 }

@@ -1,0 +1,11 @@
+.HomeBanner {
+	background-color: #f2f2f2;
+}
+
+.HomeBanner .large__icon {
+	font-size: 50px;
+}
+
+.HomeBanner .carousel img {
+	border-radius: 20px;
+}
