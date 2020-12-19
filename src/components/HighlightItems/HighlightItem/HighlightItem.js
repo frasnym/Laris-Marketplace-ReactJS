@@ -23,7 +23,7 @@ export default function HighlightItem(props) {
 
 	return (
 		<div className="HighlightItem">
-			<NavLink to="/">
+			<NavLink to="/product-detail">
 				<Card>
 					<Card.Img variant="top" src={props.imageUrl} />
 					<Card.Body>
