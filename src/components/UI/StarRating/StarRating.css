@@ -1,0 +1,7 @@
+.StarRating {
+	padding-bottom: 3px;
+}
+
+.StarRating .rating__gold {
+	color: gold;
+}

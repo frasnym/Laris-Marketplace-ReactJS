@@ -21,7 +21,3 @@
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 }
-
-.HighlightItem .rating__gold {
-	color: gold;
-}
