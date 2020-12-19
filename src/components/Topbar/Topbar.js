@@ -8,10 +8,10 @@ export default function Topbar() {
 	return (
 		<div className="container">
 			<Row className="Topbar">
-				<Col className="TopbarLeft text-start">
+				<Col sm={12} className="TopbarLeft text-start">
 					<p className="m-0">Selamat datang di LARIS!</p>
 				</Col>
-				<Col className="TopbarLeft text-end">
+				<Col sm={12} className="TopbarLeft text-end">
 					<nav>
 						<NavLink to="/" className="p-2 text-dark">
 							Tentang Laris

@@ -9,10 +9,10 @@ export default function MainHeader() {
 		<div className="MainHeader">
 			<div className="container">
 				<div className="d-flex">
-					<div className="logo me-5">
+					<div className="flex-grow-1 logo me-5">
 						<h3>LARIS LOGO!</h3>
 					</div>
-					<div className="flex-grow-1">
+					<div className="flex-grow-1 d-none d-lg-block">
 						<Form className="SearchForm d-flex">
 							<Form.Control
 								type="text"
@@ -41,6 +41,16 @@ export default function MainHeader() {
 					>
 						Daftar
 					</Button>
+				</div>
+				<div className="d-lg-none pt-2">
+					<Form className="SearchForm d-flex">
+						<Form.Control
+							type="text"
+							name="search_all"
+							placeholder="Saya ingin berbelanja..."
+						/>
+						<Button variant="warning">Cari</Button>
+					</Form>
 				</div>
 			</div>
 		</div>

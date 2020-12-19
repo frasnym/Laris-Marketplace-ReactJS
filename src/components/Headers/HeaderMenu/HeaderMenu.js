@@ -8,7 +8,7 @@ export default function HeaderMenu() {
 	return (
 		<>
 			<div className="HeaderMenu">
-				<div className="container">
+				<div className="container d-none d-lg-block">
 					<Row>
 						<Col md={3} className="category__toggle">
 							<div className="ms-5 me-5">
