@@ -41,6 +41,7 @@ export default class ProductDetailImage extends Component {
 			swipeToSlide: true,
 			focusOnSelect: true,
 			className: "nav__slider",
+			lazyLoad: true,
 		};
 
 		const images = this.props.images;
