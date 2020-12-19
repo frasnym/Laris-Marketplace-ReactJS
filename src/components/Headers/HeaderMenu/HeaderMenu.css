@@ -61,6 +61,7 @@
 	border-left: 1px solid lightgray;
 	border-right: 1px solid lightgray;
 	border-bottom: 1px solid lightgray;
+	min-height: 100%;
 }
 
 .category__submenu:hover {
@@ -69,4 +70,12 @@
 
 .category__submenu li {
 	color: black;
+}
+
+.category__submenu li ul {
+	padding-left: 0;
+}
+
+.category__submenu li ul li {
+	list-style: none;
 }

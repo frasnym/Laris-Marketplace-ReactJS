@@ -28,12 +28,39 @@ export default function HeaderMenu() {
 										</div>
 										<div className="category__submenu">
 											<ul className="mb-0 ps-2 pe-5">
-												<li>Men</li>
+												<li>
+													<b>Men</b>
+													<ul>
+														<li>Nike</li>
+														<li>Adidas</li>
+													</ul>
+												</li>
 												<li>Woman</li>
 											</ul>
 										</div>
 									</li>
 									<li>Elektronik</li>
+									<li className="d-flex">
+										<span className="flex-grow-1">
+											Mainan
+										</span>
+										<div>
+											<div className="icon__box">
+												<FaAngleRight className="icon__grey" />
+											</div>
+										</div>
+										<div className="category__submenu">
+											<ul className="mb-0 ps-2 pe-5">
+												<li>
+													<b>Motor</b>
+													<ul>
+														<li>Honda</li>
+														<li>Yamaha</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
 								</ul>
 							</div>
 						</Col>
