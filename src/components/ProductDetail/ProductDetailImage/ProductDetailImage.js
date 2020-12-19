@@ -23,17 +23,22 @@ export default function ProductDetailImage(props) {
 		slidesToScroll: 1,
 		initialSlide: 0,
 		autoplay: false,
+		dotsClass: "slick-dots slick-thumb",
+		customPaging: function (i) {
+			return <Image src={props.images[i]} fluid />;
+		},
 	};
 
 	const modalSliderItems = [];
+	const magnifyItems = [];
 	props.images.forEach((image) => {
+		// Slider for Modal
 		modalSliderItems.push(<Image src={image} fluid />);
-	});
 
-	const magnifyItems = props.images.map((image) => {
+		// Slider Page Image
 		const magnifySettings = {
 			smallImage: {
-				alt: "Wristwatch by Ted Baker London",
+				alt: image,
 				isFluidWidth: true,
 				src: image,
 			},
@@ -44,8 +49,7 @@ export default function ProductDetailImage(props) {
 			},
 			enlargedImagePosition: "over",
 		};
-
-		return (
+		magnifyItems.push(
 			<div onClick={handleModalShow}>
 				<ReactImageMagnify
 					imageClassName="magnify__container"
@@ -63,6 +67,7 @@ export default function ProductDetailImage(props) {
 				show={modalShow}
 				onHide={handleModalClose}
 				className="product__modal"
+				centered
 			>
 				<Modal.Header closeButton></Modal.Header>
 				<Modal.Body>
