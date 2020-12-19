@@ -4,7 +4,7 @@
 
 .product__modal .modal-body .slider__container {
 	padding: 0 30px;
-	padding-bottom: 75px;
+	padding-bottom: 15%;
 }
 
 .product__modal .modal-body .slider__container .big__image {
@@ -16,13 +16,29 @@
 	padding-bottom: 0;
 }
 
+.nav__slider .image__wrapper {
+	padding: 10px;
+}
+
+.nav__slider .slick-current img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.nav__slider img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+
 .slick-thumb {
-	bottom: -72px;
+	bottom: -15%;
 }
 
 .slick-thumb li {
-	width: 72px;
-	height: 72px;
+	width: 10%;
+	height: 10%;
 }
 
 .slick-thumb li.slick-active img {
