@@ -3,17 +3,3 @@
 	font-weight: bold;
 	color: orangered;
 }
-
-.HighlightItems .slick-prev {
-	display: block;
-	left: 10px;
-	position: absolute;
-	z-index: 899;
-}
-
-.HighlightItems .slick-next {
-	display: block;
-	right: 10px;
-	position: absolute;
-	z-index: 899;
-}

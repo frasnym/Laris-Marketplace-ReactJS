@@ -3,3 +3,12 @@
 body {
 	font-family: "Work Sans", sans-serif;
 }
+
+.slick-arrow {
+	background-color: lightgray;
+	border-radius: 10px;
+}
+
+.slick-arrow:hover {
+	background-color: orangered;
+}
