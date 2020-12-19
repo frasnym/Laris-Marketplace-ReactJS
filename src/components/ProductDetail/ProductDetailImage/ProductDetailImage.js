@@ -33,7 +33,9 @@ export default function ProductDetailImage(props) {
 	const magnifyItems = [];
 	props.images.forEach((image) => {
 		// Slider for Modal
-		modalSliderItems.push(<Image src={image} fluid />);
+		modalSliderItems.push(
+			<Image src={image} fluid className="big__image" />
+		);
 
 		// Slider Page Image
 		const magnifySettings = {
