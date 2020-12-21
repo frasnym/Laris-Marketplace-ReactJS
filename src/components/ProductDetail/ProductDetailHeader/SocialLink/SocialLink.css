@@ -1,0 +1,7 @@
+.SocialLink {
+	display: inline-block;
+}
+
+.SocialLink .icon__box {
+	height: 40px;
+}

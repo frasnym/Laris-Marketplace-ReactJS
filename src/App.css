@@ -13,6 +13,27 @@ body {
 	background-color: orangered;
 }
 
+.social__link__color {
+	color: white;
+	margin: 0 5px;
+}
+
+.social__link__color:hover {
+	color: lightgray;
+}
+
+.facebook__bgcolor {
+	background-color: #1b4e9b;
+}
+
+.twitter__bgcolor {
+	background-color: #00aeef;
+}
+
+.googeplus__bgcolor {
+	background-color: #c00;
+}
+
 /* Bootstrap Style */
 
 .close {

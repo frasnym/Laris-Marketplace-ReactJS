@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
 
 import Layout from "../../components/Layout/Layout";
+import ProductDetailHeader from "../../components/ProductDetail/ProductDetailHeader/ProductDetailHeader";
 import ProductDetailImage from "../../components/ProductDetail/ProductDetailImage/ProductDetailImage";
 import MyBreadcrumb from "../../components/UI/Breadcrumb/Breadcrumb";
-import StarRating from "../../components/UI/StarRating/StarRating";
 
 import "./ProductDetailPage.css";
 
@@ -43,23 +43,22 @@ export default class ProductDetailPage extends Component {
 				</div>
 				<div className="container pt-5">
 					<Row>
-						<Col md={12}>
-							<h3>This is a long product name</h3>
-							<ul className="entry__meta mb-3">
-								<li className="d-flex align-items-center">
-									<StarRating rating={3.7} />
-									<div>&nbsp;(1 Review)</div>
-								</li>
-								<li>Terjual 2000 Item</li>
-								<li>Dilihat 3000 x</li>
-							</ul>
+						<Col md={12} className="mb-3">
+							<ProductDetailHeader />
 						</Col>
 						<Col md={4}>
 							<ProductDetailImage images={this.images} />
 						</Col>
 						<Col md={8}>
 							<div className="ProductDetail ps-5">
-								<h3 className="item__price">Rp 3.700.255</h3>
+								<div className="item__detail">
+									<dt>Harga</dt>
+									<dd>
+										<h3 className="item__price">
+											Rp 3.700.255
+										</h3>
+									</dd>
+								</div>
 							</div>
 						</Col>
 						<Col md={12}>Desc</Col>
