@@ -1,10 +1,10 @@
 import React from "react";
 import { Tab, Tabs } from "react-bootstrap";
 
-import "./ProductDetailDescription.css";
-import ProductDetailDescriptionReviews from "./ProductDetailDescriptionReviews/ProductDetailDescriptionReviews";
+import "./Descriptions.css";
+import Reviews from "./Reviews/Reviews";
 
-export default function ProductDetailDescription() {
+export default function Descriptions() {
 	const description = (
 		<>
 			<h2>Title asdbasdb</h2>
@@ -23,9 +23,9 @@ export default function ProductDetailDescription() {
 		</>
 	);
 	return (
-		<section className="ProductDetailDescription">
+		<section className="Descriptions">
 			<Tabs
-				id="ProductDetailDescription"
+				id="Descriptions"
 				className="justify-content-center"
 				defaultActiveKey="reviews"
 			>
@@ -43,7 +43,7 @@ export default function ProductDetailDescription() {
 					eventKey="reviews"
 					title="Ulasan"
 				>
-					<ProductDetailDescriptionReviews />
+					<Reviews />
 				</Tab>
 				<Tab eventKey="store_info" title="Catatan Toko">
 					store_info

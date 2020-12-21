@@ -3,9 +3,9 @@ import SingleStarRating from "../../../UI/SingleStarRating/SingleStarRating";
 import StarRating from "../../../UI/StarRating/StarRating";
 import IndividualReview from "./IndividualReview/IndividualReview";
 
-import "./ProductDetailDescriptionReviews.css";
+import "./Reviews.css";
 
-export default function ProductDetailDescriptionReviews() {
+export default function Reviews() {
 	const singleRatings = [
 		{
 			num: 5,
@@ -35,7 +35,7 @@ export default function ProductDetailDescriptionReviews() {
 	];
 
 	return (
-		<section className="ProductDetailDescriptionReviews">
+		<section className="Reviews">
 			<div className="reviews__score">
 				<div>
 					<p>Rata-rata Nilai Ulasan</p>
@@ -49,6 +49,7 @@ export default function ProductDetailDescriptionReviews() {
 					{singleRatings.map((item) => {
 						return (
 							<SingleStarRating
+								key={`singlestar${item.num}`}
 								num={item.num}
 								progress={item.progress}
 								total={item.total}

@@ -3,10 +3,10 @@ import { FaFacebookF, FaTwitter, FaGooglePlusG } from "react-icons/fa";
 
 import StarRating from "../../UI/StarRating/StarRating";
 
-import "./ProductDetailHeader.css";
+import "./Headers.css";
 import SocialLink from "./SocialLink/SocialLink";
 
-export default function ProductDetailHeader() {
+export default function Headers() {
 	const shareLinks = [
 		{
 			url: "/#",
@@ -26,7 +26,7 @@ export default function ProductDetailHeader() {
 	];
 
 	return (
-		<div className="ProductDetailHeader">
+		<div className="Headers">
 			<div className="entry__left">
 				<h3>This is a long product name</h3>
 				<ul className="entry__meta mb-3">

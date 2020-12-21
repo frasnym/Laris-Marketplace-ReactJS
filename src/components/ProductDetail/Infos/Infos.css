@@ -1,58 +1,58 @@
-.ProductDetailInfo .item__price {
+.ProductDetail .Infos .item__price {
 	color: orangered;
 	font-weight: bold;
 }
 
-.ProductDetailInfo .item__detail {
+.ProductDetail .Infos .item__detail {
 	padding: 20px 0px;
 	border-top: 1px solid rgb(229, 231, 233);
 }
 
-.ProductDetailInfo .item__detail > dt,
-.ProductDetailInfo .item__detail > dd {
+.ProductDetail .Infos .item__detail > dt,
+.ProductDetail .Infos .item__detail > dd {
 	display: inline-block;
 }
 
-.ProductDetailInfo .item__detail > dt {
+.ProductDetail .Infos .item__detail > dt {
 	width: 100px;
 }
 
-.ProductDetailInfo .item__detail > dd {
+.ProductDetail .Infos .item__detail > dd {
 	vertical-align: top;
 	padding-left: 20px;
 	margin: 0;
 }
 
-.ProductDetailInfo .info__list__item {
+.ProductDetail .Infos .info__list__item {
 	display: inline-block;
 	padding: 0 16px;
 	border-right: 1px solid rgb(229, 231, 233);
 }
 
-.ProductDetailInfo .info__list__item:first-of-type {
+.ProductDetail .Infos .info__list__item:first-of-type {
 	padding-left: 0px;
 }
 
-.ProductDetailInfo .info__list__item:last-child {
+.ProductDetail .Infos .info__list__item:last-child {
 	padding-right: 0px;
 	border-right: none;
 }
 
-.ProductDetailInfo .info__list__item > dt {
+.ProductDetail .Infos .info__list__item > dt {
 	font-weight: normal;
 }
 
-.ProductDetailInfo .info__list__item > dd {
+.ProductDetail .Infos .info__list__item > dd {
 	font-weight: bold;
 	margin-bottom: 0;
 }
 
-.ProductDetailInfo .quantity__editor {
+.ProductDetail .Infos .quantity__editor {
 	display: flex;
 	align-content: center;
 }
 
-.ProductDetailInfo .quantity__editor svg {
+.ProductDetail .Infos .quantity__editor svg {
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
@@ -63,11 +63,11 @@
 	margin: 5px;
 }
 
-.ProductDetailInfo .quantity__editor svg.disabled {
+.ProductDetail .Infos .quantity__editor svg.disabled {
 	background-color: lightgray;
 }
 
-.ProductDetailInfo .quantity__editor input {
+.ProductDetail .Infos .quantity__editor input {
 	padding: 1px;
 	margin-bottom: 0px;
 	border-top: none;
@@ -86,8 +86,8 @@
 }
 
 /* Chrome, Safari, Edge, Opera */
-.ProductDetailInfo .quantity__editor input::-webkit-outer-spin-button,
-.ProductDetailInfo .quantity__editor input::-webkit-inner-spin-button {
+.ProductDetail .Infos .quantity__editor input::-webkit-outer-spin-button,
+.ProductDetail .Infos .quantity__editor input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }

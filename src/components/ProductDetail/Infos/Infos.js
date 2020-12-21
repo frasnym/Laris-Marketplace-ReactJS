@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
-import ProductDetailInfoItem from "./ProductDetailInfoItem/ProductDetailInfoItem";
+import InfoItem from "./InfoItem/InfoItem";
 import { numberWithSeparators } from "../../../utils/Helper";
 
-import "./ProductDetailInfo.css";
+import "./Infos.css";
 
-export default function ProductDetailInfo(props) {
+export default function Infos(props) {
 	const [qty, setQty] = useState(props.qty);
 
 	const infoProduct = (
@@ -27,8 +27,8 @@ export default function ProductDetailInfo(props) {
 	);
 
 	return (
-		<div className="ProductDetailInfo ps-5">
-			<ProductDetailInfoItem
+		<div className="Infos ps-5">
+			<InfoItem
 				title="Harga"
 				detail={
 					<h3 className="item__price">
@@ -36,7 +36,7 @@ export default function ProductDetailInfo(props) {
 					</h3>
 				}
 			/>
-			<ProductDetailInfoItem
+			<InfoItem
 				title="Jumlah"
 				detail={
 					<div className="quantity__editor">
@@ -71,8 +71,8 @@ export default function ProductDetailInfo(props) {
 					</div>
 				}
 			/>
-			<ProductDetailInfoItem title="Info Produk" detail={infoProduct} />
-			<ProductDetailInfoItem
+			<InfoItem title="Info Produk" detail={infoProduct} />
+			<InfoItem
 				title="Total"
 				detail={
 					<h3 className="item__price">

@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import ReactImageMagnify from "react-image-magnify";
 
-import "./ProductDetailImage.css";
+import "./Images.css";
 import { Image, Modal } from "react-bootstrap";
 
-export default class ProductDetailImage extends Component {
+export default class Images extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {

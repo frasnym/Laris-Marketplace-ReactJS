@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
 
 import Layout from "../../components/Layout/Layout";
-import ProductDetailDescription from "../../components/ProductDetail/ProductDetailDescription/ProductDetailDescription";
-import ProductDetailHeader from "../../components/ProductDetail/ProductDetailHeader/ProductDetailHeader";
-import ProductDetailImage from "../../components/ProductDetail/ProductDetailImage/ProductDetailImage";
-import ProductDetailInfo from "../../components/ProductDetail/ProductDetailInfo/ProductDetailInfo";
+import Descriptions from "../../components/ProductDetail/Descriptions/Descriptions";
+import Headers from "../../components/ProductDetail/Headers/Headers";
+import Images from "../../components/ProductDetail/Images/Images";
+import Infos from "../../components/ProductDetail/Infos/Infos";
 import MyBreadcrumb from "../../components/UI/Breadcrumb/Breadcrumb";
 
 import "./ProductDetailPage.css";
@@ -64,13 +64,13 @@ export default class ProductDetailPage extends Component {
 				<div className="ProductDetail container pt-5">
 					<Row>
 						<Col md={12} className="mb-3">
-							<ProductDetailHeader />
+							<Headers />
 						</Col>
 						<Col md={4}>
-							<ProductDetailImage images={this.images} />
+							<Images images={this.images} />
 						</Col>
 						<Col md={8}>
-							<ProductDetailInfo
+							<Infos
 								product={this.product}
 								total={this.state.total}
 								qty={this.state.qty}
@@ -78,7 +78,7 @@ export default class ProductDetailPage extends Component {
 							/>
 						</Col>
 						<Col md={12}>
-							<ProductDetailDescription />
+							<Descriptions />
 						</Col>
 					</Row>
 				</div>
