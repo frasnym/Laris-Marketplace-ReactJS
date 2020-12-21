@@ -1,6 +1,26 @@
 .ProductDetail .Reviews .reviews__score {
-	display: flex;
-	align-items: flex-end;
+	display: block;
+	text-align: center;
+}
+
+.ProductDetail .Reviews .reviews__score .reviews__score_conclusion {
+	margin-bottom: 1rem;
+}
+
+@media (min-width: 500px) {
+	.ProductDetail .Reviews .reviews__score {
+		display: flex;
+		align-items: flex-end;
+		text-align: left;
+	}
+
+	.ProductDetail .Reviews .reviews__score .reviews__score_conclusion {
+		margin-bottom: 0;
+	}
+}
+
+.ProductDetail .Reviews .reviews__score .reviews__score_single {
+	margin-top: auto;
 }
 
 .ProductDetail .Reviews .reviews__score .rating__score {

@@ -1,3 +1,13 @@
+.ProductDetail .Descriptions {
+	padding: 0 1rem;
+}
+
+@media (min-width: 800px) {
+	.ProductDetail .Descriptions {
+		padding: 0 5rem;
+	}
+}
+
 .Descriptions .description_title {
 	font-weight: bold;
 	color: lightgray;

@@ -37,7 +37,7 @@ export default function Reviews() {
 	return (
 		<section className="Reviews">
 			<div className="reviews__score">
-				<div>
+				<div className="reviews__score_conclusion">
 					<p>Rata-rata Nilai Ulasan</p>
 					<h5 className="rating__score">
 						3.7<span>/ 5</span>
@@ -45,7 +45,7 @@ export default function Reviews() {
 					<StarRating rating={3.7} />
 					<div>&nbsp;(1 Review)</div>
 				</div>
-				<div className="mt-auto">
+				<div className="reviews__score_single">
 					{singleRatings.map((item) => {
 						return (
 							<SingleStarRating

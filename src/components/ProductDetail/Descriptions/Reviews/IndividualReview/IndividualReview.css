@@ -1,5 +1,20 @@
 .IndividualReview {
-	display: flex;
+	display: block;
+	width: 100%;
+}
+
+.IndividualReview .review__content {
+	margin-top: 1rem;
+}
+
+@media (min-width: 800px) {
+	.IndividualReview {
+		display: flex;
+	}
+
+	.IndividualReview .review__content {
+		margin-top: 0;
+	}
 }
 
 .IndividualReview .review__meta span:first-child {

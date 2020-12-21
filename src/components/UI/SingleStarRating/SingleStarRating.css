@@ -1,7 +1,13 @@
 .SingleStarRating {
 	display: flex;
 	align-items: center;
-	width: 300px;
+	width: 100%;
+}
+
+@media (min-width: 500px) {
+	.SingleStarRating {
+		width: 300px;
+	}
 }
 
 .SingleStarRating .individual__star,
