@@ -3,6 +3,7 @@ import { Tab, Tabs } from "react-bootstrap";
 
 import "./Descriptions.css";
 import Reviews from "./Reviews/Reviews";
+import StoreInfo from "./StoreInfo/StoreInfo";
 
 export default function Descriptions() {
 	const description = (
@@ -45,8 +46,13 @@ export default function Descriptions() {
 				>
 					<Reviews />
 				</Tab>
-				<Tab eventKey="store_info" title="Catatan Toko">
-					store_info
+				<Tab
+					tabClassName="description_title"
+					className="pt-5"
+					eventKey="store_info"
+					title="Catatan Toko"
+				>
+					<StoreInfo />
 				</Tab>
 			</Tabs>
 		</section>

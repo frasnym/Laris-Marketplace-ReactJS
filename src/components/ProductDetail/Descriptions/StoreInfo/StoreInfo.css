@@ -1,0 +1,21 @@
+.ProductDetail .StoreInfo {
+	display: flex;
+	align-items: flex-start;
+}
+
+.ProductDetail .StoreInfo img {
+	border-radius: 50%;
+}
+
+.ProductDetail .StoreInfo .store__detail dt,
+.ProductDetail .StoreInfo .store__detail dd {
+	display: inline-block;
+}
+
+.ProductDetail .StoreInfo .store__detail dt {
+	min-width: 100px;
+}
+
+.ProductDetail .StoreInfo .store__detail dd {
+	padding-left: 20px;
+}
