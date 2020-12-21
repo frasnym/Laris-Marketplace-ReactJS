@@ -10,6 +10,24 @@ import MyBreadcrumb from "../../components/UI/Breadcrumb/Breadcrumb";
 import "./ProductDetailPage.css";
 
 export default class ProductDetailPage extends Component {
+	product = {
+		price: 320000,
+	};
+
+	state = {
+		qty: 1,
+		total: this.product.price,
+	};
+
+	totalPriceHandler = (qty) => {
+		const total = this.product.price * qty;
+
+		this.setState({
+			qty,
+			total,
+		});
+	};
+
 	breadcrumbItems = [
 		{
 			slug: "slug1",
@@ -51,7 +69,12 @@ export default class ProductDetailPage extends Component {
 							<ProductDetailImage images={this.images} />
 						</Col>
 						<Col md={8}>
-							<ProductDetailInfo />
+							<ProductDetailInfo
+								product={this.product}
+								total={this.state.total}
+								qty={this.state.qty}
+								totalPriceHandler={this.totalPriceHandler}
+							/>
 						</Col>
 						<Col md={12}>Desc</Col>
 					</Row>
