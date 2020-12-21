@@ -1,0 +1,15 @@
+.SingleStarRating {
+	display: flex;
+	align-items: center;
+	width: 300px;
+}
+
+.SingleStarRating .individual__star,
+.SingleStarRating .individual__total {
+	width: 20%;
+}
+
+.SingleStarRating .progress {
+	width: 60%;
+	height: 0.5rem;
+}

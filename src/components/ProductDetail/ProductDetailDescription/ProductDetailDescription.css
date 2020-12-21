@@ -1,0 +1,9 @@
+.ProductDetailDescription .description_title {
+	font-weight: bold;
+	color: lightgray;
+}
+
+.ProductDetailDescription .nav-tabs .nav-link.active {
+	border: none;
+	border-bottom: 2px solid orangered;
+}

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
 
 import Layout from "../../components/Layout/Layout";
+import ProductDetailDescription from "../../components/ProductDetail/ProductDetailDescription/ProductDetailDescription";
 import ProductDetailHeader from "../../components/ProductDetail/ProductDetailHeader/ProductDetailHeader";
 import ProductDetailImage from "../../components/ProductDetail/ProductDetailImage/ProductDetailImage";
 import ProductDetailInfo from "../../components/ProductDetail/ProductDetailInfo/ProductDetailInfo";
@@ -60,7 +61,7 @@ export default class ProductDetailPage extends Component {
 						<MyBreadcrumb items={this.breadcrumbItems} />
 					</div>
 				</div>
-				<div className="container pt-5">
+				<div className="ProductDetail container pt-5">
 					<Row>
 						<Col md={12} className="mb-3">
 							<ProductDetailHeader />
@@ -76,7 +77,9 @@ export default class ProductDetailPage extends Component {
 								totalPriceHandler={this.totalPriceHandler}
 							/>
 						</Col>
-						<Col md={12}>Desc</Col>
+						<Col md={12}>
+							<ProductDetailDescription />
+						</Col>
 					</Row>
 				</div>
 			</Layout>

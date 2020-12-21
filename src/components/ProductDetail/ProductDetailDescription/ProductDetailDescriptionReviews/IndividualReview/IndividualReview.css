@@ -1,0 +1,22 @@
+.IndividualReview {
+	display: flex;
+}
+
+.IndividualReview .review__meta span:first-child {
+	border-right: 1px solid rgb(229, 231, 233);
+	padding-left: 0;
+}
+
+.IndividualReview .review__meta span {
+	padding: 0 16px;
+}
+
+.IndividualReview img {
+	max-width: 100%;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.IndividualReview .review__customer {
+	min-width: 300px;
+}

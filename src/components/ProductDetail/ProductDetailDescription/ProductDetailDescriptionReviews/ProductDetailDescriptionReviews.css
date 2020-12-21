@@ -1,0 +1,29 @@
+.ProductDetailDescriptionReviews .reviews__score {
+	display: flex;
+	align-items: flex-end;
+}
+
+.ProductDetailDescriptionReviews .reviews__score .rating__score {
+	margin: 0px 0px 10px;
+	color: rgb(49, 53, 59);
+	line-height: 60px;
+	font-size: 60px;
+	font-weight: 400;
+}
+
+.ProductDetailDescriptionReviews .reviews__score .rating__score span {
+	margin-left: 5px;
+	color: rgb(108, 114, 124);
+	line-height: 22px;
+	font-size: 16px;
+}
+
+.ProductDetailDescriptionReviews .reviews__list {
+	margin-top: 2rem;
+}
+
+.ProductDetailDescriptionReviews .reviews__list .header {
+	background-color: lightgray;
+	padding: 10px 5px;
+	font-weight: bold;
+}
