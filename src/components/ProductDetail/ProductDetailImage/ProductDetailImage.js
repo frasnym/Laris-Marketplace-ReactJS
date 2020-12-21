@@ -51,7 +51,9 @@ export default class ProductDetailImage extends Component {
 			dots: true,
 			dotsClass: "slick-dots slick-thumb",
 			customPaging: function (i) {
-				return <Image src={images[i]} fluid />;
+				return (
+					<Image key={`thumb${images[i]}`} src={images[i]} fluid />
+				);
 			},
 		};
 
@@ -72,8 +74,8 @@ export default class ProductDetailImage extends Component {
 
 			// Slider for Nav
 			navSliderItems.push(
-				<div className="image__wrapper">
-					<Image key={`nav${image}${index}`} src={image} fluid />
+				<div key={`nav${image}${index}`} className="image__wrapper">
+					<Image src={image} fluid />
 				</div>
 			);
 
