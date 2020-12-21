@@ -27,7 +27,7 @@ export default function Infos(props) {
 	);
 
 	return (
-		<div className="Infos ps-5">
+		<div className="Infos">
 			<InfoItem
 				title="Harga"
 				detail={

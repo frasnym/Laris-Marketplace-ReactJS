@@ -1,3 +1,13 @@
+.ProductDetail .Infos {
+	padding: 0 1rem;
+}
+
+@media (min-width: 800px) {
+	.ProductDetail .Infos {
+		padding: 0 5rem;
+	}
+}
+
 .ProductDetail .Infos .item__price {
 	color: orangered;
 	font-weight: bold;
@@ -6,26 +16,28 @@
 .ProductDetail .Infos .item__detail {
 	padding: 20px 0px;
 	border-top: 1px solid rgb(229, 231, 233);
+	text-align: center;
 }
 
 .ProductDetail .Infos .item__detail > dt,
 .ProductDetail .Infos .item__detail > dd {
-	display: inline-block;
+	display: block;
 }
 
 .ProductDetail .Infos .item__detail > dt {
-	width: 100px;
+	width: 100%;
+	padding-right: 0;
 }
 
 .ProductDetail .Infos .item__detail > dd {
 	vertical-align: top;
-	padding-left: 20px;
+	padding-left: 0;
 	margin: 0;
 }
 
 .ProductDetail .Infos .info__list__item {
 	display: inline-block;
-	padding: 0 16px;
+	padding: 10px 16px;
 	border-right: 1px solid rgb(229, 231, 233);
 }
 
@@ -47,8 +59,38 @@
 	margin-bottom: 0;
 }
 
+@media (min-width: 450px) {
+	.ProductDetail .Infos .item__detail {
+		padding: 20px 0px;
+		border-top: 1px solid rgb(229, 231, 233);
+		text-align: left;
+	}
+
+	.ProductDetail .Infos .item__detail > dt {
+		width: 100px;
+		padding-right: 0;
+	}
+
+	.ProductDetail .Infos .item__detail > dt,
+	.ProductDetail .Infos .item__detail > dd {
+		display: inline-block;
+	}
+
+	.ProductDetail .Infos .item__detail > dt {
+		padding-right: 1rem;
+	}
+
+	.ProductDetail .Infos .item__detail > dd {
+		padding-left: 20px;
+	}
+
+	.ProductDetail .Infos .info__list__item {
+		padding: 0 16px;
+	}
+}
+
 .ProductDetail .Infos .quantity__editor {
-	display: flex;
+	display: inline-flex;
 	align-content: center;
 }
 
