@@ -11,8 +11,6 @@ export default function MyBreadcrumb(props) {
 		slugUrl.push(item.slug);
 		const actived = index + 1 === props.items.length ? true : false;
 
-		console.log(index + 1, props.items.length, actived);
-
 		return (
 			<Breadcrumb.Item
 				className={`breadcrumb-item ${actived}`}

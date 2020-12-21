@@ -59,16 +59,21 @@ export default class ProductDetailImage extends Component {
 		const navSliderItems = [];
 		const magnifyItems = [];
 
-		this.props.images.forEach((image) => {
+		this.props.images.forEach((image, index) => {
 			// Slider for Modal
 			modalSliderItems.push(
-				<Image key={image} src={image} fluid className="big__image" />
+				<Image
+					key={`modal${image}${index}`}
+					src={image}
+					fluid
+					className="big__image"
+				/>
 			);
 
 			// Slider for Nav
 			navSliderItems.push(
 				<div className="image__wrapper">
-					<Image key={image} src={image} fluid />
+					<Image key={`nav${image}${index}`} src={image} fluid />
 				</div>
 			);
 
@@ -87,7 +92,10 @@ export default class ProductDetailImage extends Component {
 				enlargedImagePosition: "over",
 			};
 			magnifyItems.push(
-				<div key={image} onClick={this.handleModalShow}>
+				<div
+					key={`magni${image}${index}`}
+					onClick={this.handleModalShow}
+				>
 					<ReactImageMagnify
 						imageClassName="magnify__container"
 						enlargedImageContainerClassName="magnify__container"
