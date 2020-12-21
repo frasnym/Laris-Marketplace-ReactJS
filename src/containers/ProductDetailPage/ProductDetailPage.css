@@ -1,13 +1,3 @@
 .Breadcrumb {
 	background-color: #f2f2f2;
 }
-
-.ProductDetail .item__price {
-	color: orangered;
-	font-weight: bold;
-}
-
-.ProductDetail .item__detail dt,
-.ProductDetail .item__detail dd {
-	display: inline-block;
-}

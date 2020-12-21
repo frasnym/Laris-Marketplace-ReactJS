@@ -4,6 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import Layout from "../../components/Layout/Layout";
 import ProductDetailHeader from "../../components/ProductDetail/ProductDetailHeader/ProductDetailHeader";
 import ProductDetailImage from "../../components/ProductDetail/ProductDetailImage/ProductDetailImage";
+import ProductDetailInfo from "../../components/ProductDetail/ProductDetailInfo/ProductDetailInfo";
 import MyBreadcrumb from "../../components/UI/Breadcrumb/Breadcrumb";
 
 import "./ProductDetailPage.css";
@@ -50,16 +51,7 @@ export default class ProductDetailPage extends Component {
 							<ProductDetailImage images={this.images} />
 						</Col>
 						<Col md={8}>
-							<div className="ProductDetail ps-5">
-								<div className="item__detail">
-									<dt>Harga</dt>
-									<dd>
-										<h3 className="item__price">
-											Rp 3.700.255
-										</h3>
-									</dd>
-								</div>
-							</div>
+							<ProductDetailInfo />
 						</Col>
 						<Col md={12}>Desc</Col>
 					</Row>

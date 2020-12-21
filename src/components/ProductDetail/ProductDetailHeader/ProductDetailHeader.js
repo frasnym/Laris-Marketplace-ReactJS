@@ -41,7 +41,11 @@ export default function ProductDetailHeader() {
 			<div className="share__links">
 				{shareLinks.map((link) => {
 					return (
-						<SocialLink url={link.url} bgcolor={link.bgcolor}>
+						<SocialLink
+							key={link.bgcolor}
+							url={link.url}
+							bgcolor={link.bgcolor}
+						>
 							{link.content}
 						</SocialLink>
 					);

@@ -56,8 +56,6 @@ export default function HighlightItems(props) {
 			);
 		}
 
-		console.log(sliderItems);
-
 		return sliderItems;
 	};
 
